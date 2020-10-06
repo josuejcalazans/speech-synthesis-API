@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
-    <title>Document</title>
+    <title>Speech synthesis web API</title>
 
     
 </head>
 
-<body class="m-auto text-center ">
+<body class="m-auto text-center  bg-gray-300">
 
     <div class="max-w-sm mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
         <div class="px-6 py-4">
@@ -18,18 +18,21 @@
             </div>
         </div>
     </div>
+    
     <div class="border border-purple m-4  bg-white rounded-lg
-        shadow-xl h-20 w-21" 
+        shadow-xl h-20 w-21 bg-gray-200 hover:bg-white
+        hover:border-gray-300 focus:border-blue-400" 
         contenteditable
         oninput="setText(event)"
     ></div>
     <button 
       onclick="speak()" 
-      class="p-4 bg-purple-200 rounded shadow-xl">Falar</button>
+      class="p-4 bg-purple-200 hover:bg-purple-400 rounded shadow-xl">Falar</button>
     <button 
       onclick="stop()" 
-      class="p-4 bg-purple-700 text-white rounded shadow-xl">Parar</button>
-    
+      class="p-4 bg-purple-700 hover:bg-purple-400 text-white rounded shadow-xl">Parar
+    </button>
+
     <script src="script.js"></script>
 </body>
 
