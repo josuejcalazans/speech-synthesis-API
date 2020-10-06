@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Document</title>
+
+    
+</head>
+
+<body class="m-auto text-center ">
+
+    <div class="max-w-sm mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+        <div class="px-6 py-4">
+            <div class="mt-4 sm:mt-0 sm:ml-4 text-center sm:text-left">
+                <p class="text-xl leading-tight">Digite o seu texto abaixo:</p>
+            </div>
+        </div>
+    </div>
+    <div class="border border-purple m-4  bg-white rounded-lg
+        shadow-xl h-20 w-21" 
+        contenteditable
+        oninput="setText(event)"
+    ></div>
+    <button 
+      onclick="speak()" 
+      class="p-4 bg-purple-200 rounded shadow-xl">Falar</button>
+    <button 
+      onclick="stop()" 
+      class="p-4 bg-purple-700 text-white rounded shadow-xl">Parar</button>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
